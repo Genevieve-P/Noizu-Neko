@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">NoizuNeko</div>
+        <nav>
+            <a href="index.html">Intro</a>
+            <a href="music.html">Music</a>
+            <a href="about.html">About</a>
+            <a href="credits.html">Credits</a>
+        </nav>
+    </header>
+    <main>
+        <div class="player-box">
+            <h2>Audio Terminal</h2>
+            <dov class="input-group">
+                <label>Select Track</label>
+                <select id='track-select'>
+                    <option value="song1.mp3">Sample_01.mps</option>
+                    <option value="song2.mp3">Sample_02.mp3</option>
+                </select>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Start Sec</label>
+                    <input type="number" id="start-time" value="0">
+                </div>
+                <div class="input-group">
+                    <label>Duration (Max 30s)</label>
+                    <input type="number" id="duration" value="5" max="30">
+                </div>
+            </div>
+            <button id="play-btn">Initialize Playback</button>
+            <p id="status">Awaiting input...</p>
+        </div>
+    </main>
+</body>
+</html>
